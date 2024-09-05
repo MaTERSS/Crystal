@@ -28,11 +28,11 @@ namespace CSLight
             int gold;
             string input = Console.ReadLine();
             gold = Convert.ToInt32(input);
-            int crystal = 175;
-            int result;
-            result = gold / crystal;
-            int remain = gold - result * crystal;
-            Console.WriteLine("Вы купили:"+result+"кристаллов.У вас осталось:" + remain + "золота");
+            int crystalPrice = 175;
+            int purchasedСrystals;
+            purchasedСrystals = gold / crystalPrice;
+            int goldResidue = gold - purchasedСrystals * crystalPrice;
+            Console.WriteLine("Вы купили:"+purchasedСrystals+"кристаллов.У вас осталось:" + goldResidue + "золота");
         }
     }
 }
